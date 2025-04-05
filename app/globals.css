@@ -127,3 +127,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .auth-layout {
+    @apply mx-auto flex min-h-screen max-w-7xl items-center justify-center max-sm:px-4 max-sm:py-8;
+  }
+
+  .card-border {
+    @apply border-gradient w-fit rounded-2xl p-0.5;
+  }
+
+  .card {
+    @apply dark-gradient min-h-full rounded-2xl;
+  }
+}
+
+@utility pattern {
+  @apply bg-[url('/pattern.png')] bg-top bg-no-repeat;
+}
+
+@utility dark-gradient {
+  @apply bg-gradient-to-b from-[#1A1C20] to-[#08090D];
+}
+
+@utility border-gradient {
+  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
+}
